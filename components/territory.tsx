@@ -59,6 +59,7 @@ export function Territory() {
             </div>
           ))}
         </div>
+      </div>
     </section>
   )
 }
