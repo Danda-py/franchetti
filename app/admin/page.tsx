@@ -21,6 +21,7 @@ export default function AdminPage() {
   const [translating, setTranslating] = useState(false)
   const { toast } = useToast()
 
+  // Controllo autenticazione
   useEffect(() => {
     if (!getAuthToken()) {
       router.push("/login")
@@ -34,15 +35,33 @@ export default function AdminPage() {
     router.push("/")
   }
 
-  const handleSave = () => {
-    setSaved(true)
-    toast({
-      title: "Changes saved",
-      description: "Your content has been updated successfully.",
-    })
-    setTimeout(() => setSaved(false), 2000)
+  // Salvataggio contenuto sul server
+  const handleSave = async () => {
+    try {
+      const response = await fetch("/api/content/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(content),
+      })
+
+      if (!response.ok) throw new Error("Failed to save content")
+
+      setSaved(true)
+      toast({
+        title: "Changes saved",
+        description: "Your content has been updated successfully.",
+      })
+      setTimeout(() => setSaved(false), 2000)
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Could not save content.",
+        variant: "destructive",
+      })
+    }
   }
 
+  // Traduzione automatica
   const handleAutoTranslate = async () => {
     setTranslating(true)
     const sourceLang = activeLanguage
@@ -87,9 +106,7 @@ export default function AdminPage() {
     }
   }
 
-  if (!isAuthenticated) {
-    return null
-  }
+  if (!isAuthenticated) return null
 
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
