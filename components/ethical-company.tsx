@@ -1,4 +1,4 @@
-"use client"
+ocraty"use client"
 
 import { Leaf, Heart, Users } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
