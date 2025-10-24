@@ -336,10 +336,16 @@ export default function AdminPage() {
         </Tabs>
 
         <div className="mt-8 flex justify-center">
-          <Button onClick={handleSave} size="lg" className="gap-2">
-            <Save className="h-5 w-5" />
-            {saved ? "Saved!" : "Save Changes"}
-          </Button>
+<Button
+  onClick={handleSave}
+  size="lg"
+  className={`gap-2 transition-all duration-300 ${
+    saving ? "bg-green-500 text-white animate-pulse" : ""
+  }`}
+>
+  <Save className="h-5 w-5" />
+  {saved ? "Saved!" : "Save Changes"}
+</Button>
         </div>
       </div>
     </div>
