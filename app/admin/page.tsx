@@ -20,6 +20,7 @@ export default function AdminPage() {
   const [saved, setSaved] = useState(false)
   const [translating, setTranslating] = useState(false)
   const { toast } = useToast()
+  const [saving, setSaving] = useState(false)
 
   // Controllo autenticazione
   useEffect(() => {
@@ -35,31 +36,32 @@ export default function AdminPage() {
     router.push("/")
   }
 
-  // Salvataggio contenuto sul server
   const handleSave = async () => {
-    try {
-      const response = await fetch("/api/content/save", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(content),
-      })
-
-      if (!response.ok) throw new Error("Failed to save content")
-
-      setSaved(true)
-      toast({
-        title: "Changes saved",
-        description: "Your content has been updated successfully.",
-      })
-      setTimeout(() => setSaved(false), 2000)
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Could not save content.",
-        variant: "destructive",
-      })
-    }
+  try {
+    setSaving(true) // stato per animazione
+    const res = await fetch("/api/content/save", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(content),
+    })
+    if (!res.ok) throw new Error("Failed to save content")
+    setSaved(true)
+    toast({
+      title: "Changes saved",
+      description: "Your content has been updated successfully.",
+    })
+    setTimeout(() => setSaved(false), 2000)
+  } catch (err) {
+    toast({
+      title: "Error",
+      description: "Could not save content.",
+      variant: "destructive",
+    })
+  } finally {
+    setSaving(false)
   }
+}
+
 
   // Traduzione automatica
   const handleAutoTranslate = async () => {
