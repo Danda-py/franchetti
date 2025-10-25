@@ -12,7 +12,7 @@ export function EthicalCompany() {
     en: {
       sustainability: {
         title: "Sustainability",
-        desc: "Respect for the environment and agricultural practices that preserve biodiversity",
+        desc: "Franchetti Frutta adopts organic farming regulations, avoiding the use of chemical substances, to guarantee healthy and environmentally friendly products.",
       },
       quality: { title: "Quality", desc: "Certified organic products, cultivated with passion and dedication" },
       transparency: {
@@ -23,7 +23,7 @@ export function EthicalCompany() {
     it: {
       sustainability: {
         title: "Sostenibilità",
-        desc: "Rispetto per l'ambiente e pratiche agricole che preservano la biodiversità",
+        desc: "Franchetti Frutta adotta rigorosi disciplinari di agricoltura biologica, evitando l'uso di pesticidi chimici, per garantire prodotti sani e rispettosi dell'ambiente",
       },
       quality: { title: "Qualità", desc: "Prodotti biologici certificati, coltivati con passione e dedizione" },
       transparency: {
