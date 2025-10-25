@@ -8,17 +8,17 @@ export function Products() {
       description: "Fresh organic apples cultivated in our mountain orchards",
     },
     {
-      icon: Kiwi,
+      icon: Cherry,
       name: "Organic Kiwi Hayward",
       description: "Premium quality organic kiwis grown with traditional methods",
     },
     {
       icon: Droplet,
-      name: "Organic Apple Juices and Nectars",
+      name: "Organic Apple Juices & Nectars",
       description: "Pure organic apple juices and nectars made from our harvest",
     },
     {
-      icon: Jams,
+      icon: Jar,
       name: "Organic Jams",
       description: "Artisanal organic jams prepared with traditional recipes",
     },
@@ -28,7 +28,7 @@ export function Products() {
     <section id="products" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Their Products</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Our Products</h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-balance">
             Organic fruit and artisanal derivatives, cultivated and produced with passion in respect of Valtellina
             tradition.

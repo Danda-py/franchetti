@@ -20,9 +20,7 @@ export default function AdminPage() {
   const [saved, setSaved] = useState(false)
   const [translating, setTranslating] = useState(false)
   const { toast } = useToast()
-  const [saving, setSaving] = useState(false)
 
-  // Controllo autenticazione
   useEffect(() => {
     if (!getAuthToken()) {
       router.push("/login")
@@ -36,34 +34,15 @@ export default function AdminPage() {
     router.push("/")
   }
 
-  const handleSave = async () => {
-  try {
-    setSaving(true) // stato per animazione
-    const res = await fetch("/api/content/save", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(content),
-    })
-    if (!res.ok) throw new Error("Failed to save content")
+  const handleSave = () => {
     setSaved(true)
     toast({
       title: "Changes saved",
       description: "Your content has been updated successfully.",
     })
     setTimeout(() => setSaved(false), 2000)
-  } catch (err) {
-    toast({
-      title: "Error",
-      description: "Could not save content.",
-      variant: "destructive",
-    })
-  } finally {
-    setSaving(false)
   }
-}
 
-
-  // Traduzione automatica
   const handleAutoTranslate = async () => {
     setTranslating(true)
     const sourceLang = activeLanguage
@@ -108,7 +87,9 @@ export default function AdminPage() {
     }
   }
 
-  if (!isAuthenticated) return null
+  if (!isAuthenticated) {
+    return null
+  }
 
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
@@ -336,16 +317,10 @@ export default function AdminPage() {
         </Tabs>
 
         <div className="mt-8 flex justify-center">
-<Button
-  onClick={handleSave}
-  size="lg"
-  className={`gap-2 transition-all duration-300 ${
-    saving ? "bg-green-500 text-white animate-pulse" : ""
-  }`}
->
-  <Save className="h-5 w-5" />
-  {saved ? "Saved!" : "Save Changes"}
-</Button>
+          <Button onClick={handleSave} size="lg" className="gap-2">
+            <Save className="h-5 w-5" />
+            {saved ? "Saved!" : "Save Changes"}
+          </Button>
         </div>
       </div>
     </div>

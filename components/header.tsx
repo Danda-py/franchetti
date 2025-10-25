@@ -47,7 +47,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="relative w-12 h-12">
-              <Image src="/logo.png" alt="Franchetti Frutta Logo" fill className="object-contain" priority />
+              <Image src="/logo.jpg" alt="Franchetti Frutta Logo" fill className="object-contain" priority />
             </div>
             <span className="text-xl font-bold text-foreground">Franchetti Frutta</span>
           </div>
