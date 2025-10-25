@@ -21,7 +21,7 @@ export function Territory() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-            Our Territory
+            Territory
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-balance">
             The lands of Franchetti farm are located on the Rhon alluvial fan, between Ponte in Valtellina and Tresivio,
