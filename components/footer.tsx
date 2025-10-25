@@ -30,7 +30,7 @@ export function Footer() {
           </div>
           <div className="border-t border-secondary-foreground/20 pt-8 text-center text-sm opacity-75">
             <p>&copy; {new Date().getFullYear()} Andaloro Davide.</p>
-            <p>Codice Sorgente: <a href="https://github.com/Danda-py/franchetti/">Danda-py/franchetti</a></p>
+            <a href="https://github.com/Danda-py/franchetti/">CODICE SORGENTE</a>
           </div>
         </div>
       </div>
