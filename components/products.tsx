@@ -1,4 +1,4 @@
-import { Apple, Droplet, Car as amphora, trees} from "lucide-react"
+import { Apple, Droplet, Amphora, Trees} from "lucide-react"
 
 export function Products() {
   const products = [
@@ -8,7 +8,7 @@ export function Products() {
       description: "Fresh organic apples cultivated in our mountain orchards",
     },
     {
-      icon: trees,
+      icon: Trees,
       name: "Organic Kiwi Hayward",
       description: "Premium quality organic kiwis grown with traditional methods",
     },
@@ -18,7 +18,7 @@ export function Products() {
       description: "Pure organic apple juices and nectars made from our harvest",
     },
     {
-      icon: amphora,
+      icon: Amphora,
       name: "Organic Jams",
       description: "Artisanal organic jams prepared with traditional recipes",
     },
