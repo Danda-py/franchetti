@@ -8,7 +8,7 @@ export function Products() {
       description: "Fresh organic apples cultivated in our mountain orchards",
     },
     {
-      icon: Cherry,
+      icon: Kiwi,
       name: "Organic Kiwi Hayward",
       description: "Premium quality organic kiwis grown with traditional methods",
     },
@@ -18,7 +18,7 @@ export function Products() {
       description: "Pure organic apple juices and nectars made from our harvest",
     },
     {
-      icon: Jar,
+      icon: Jams,
       name: "Organic Jams",
       description: "Artisanal organic jams prepared with traditional recipes",
     },
