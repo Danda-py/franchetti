@@ -14,7 +14,7 @@ export function Products() {
     },
     {
       icon: Droplet,
-      name: "Organic Apple Juices & Nectars",
+      name: "Organic Apple Juices e Nectars",
       description: "Pure organic apple juices and nectars made from our harvest",
     },
     {
