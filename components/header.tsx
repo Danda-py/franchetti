@@ -19,7 +19,7 @@ export function Header() {
   }
 
   const toggleLanguage = () => {
-    setLanguage(language === "en" ? "it" : "en")
+    setLanguage(language === "en" ? "EN" : "IT")
   }
 
   const nav = {
