@@ -57,7 +57,7 @@ const defaultContent: Record<"en" | "it", Content> = {
     philosophy: {
       title: "Philosophy",
       content:
-        "The Franchetti family, with a solid agricultural tradition, has transitioned to sustainable production, becoming among the first in Valtellina to cultivate organic apples and kiwis. Daniele and Massimo lead the change towards agriculture that respects the environment, territory, and consumers, across 22 hectares of land dedicated to apple trees, kiwis, and fields.",
+        "The Franchetti family, with a solid agricultural tradition, transitioned to sustainable production, becoming one of the first in Valtellina to cultivate organic apples and kiwis. Daniele and Massimo lead the change towards agriculture that respects the environment, territory, and consumers, across 22 hectares of land dedicated to apple trees, kiwis, and fields.",
     },
     products: {
       title: "Organic Products",
