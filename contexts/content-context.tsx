@@ -45,7 +45,7 @@ const defaultContent: Record<"en" | "it", Content> = {
         "Franchetti company, located in Valtellina, has been cultivating apples and kiwis for years, enhancing a territory renowned for tourism, landscapes, cuisine, and heroic agriculture on the terraces of the Adda valley.",
     },
     whyEthical: {
-      title: "Why They Are an Ethical Company",
+      title: "Why Are They an Ethical Company",
       description:
         "The Franchetti family, with a solid agricultural tradition, has transitioned to sustainable production, becoming among the first in Valtellina to cultivate organic apples and kiwis. Daniele and Massimo lead the change towards agriculture that respects the environment, territory, and consumers, across 22 hectares of land dedicated to apple trees, kiwis, and fields.",
     },
