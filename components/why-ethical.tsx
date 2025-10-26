@@ -28,12 +28,12 @@ export function WhyEthical() {
       {
         title: "Sustainable Techniques",
         description:
-          "The farm adopts sustainable cultivation techniques to improve production and the environment, protecting this natural wealth.",
+          "The farm adopts sustainable cultivation techniques to improve production and to protect the environment and this natural wealth.",
       },
       {
         title: "Quality and Authenticity",
         description:
-          "Thanks to Valtellina's climate and thermal excursions, their fruit has unique organoleptic qualities.",
+          "Thanks to Valtellina's climate and temperature range, their fruit has unique organoleptic qualities.",
       },
       {
         title: "Environmental Commitment",
