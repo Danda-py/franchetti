@@ -19,7 +19,7 @@ export function Header() {
   }
 
   const toggleLanguage = () => {
-    setLanguage(language === "en" ? "EN" : "IT")
+    setLanguage(language === "en" ? "it" : "en")
   }
 
   const nav = {
@@ -92,14 +92,14 @@ export function Header() {
             </button>
             <Button variant="outline" size="sm" onClick={toggleLanguage} className="gap-2 bg-transparent">
               <Globe className="h-4 w-4" />
-              {language === "en" ? "IT" : "EN"}
+              {language === "en" ? "EN" : "IT"}
             </Button>
           </nav>
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 md:hidden">
             <Button variant="outline" size="sm" onClick={toggleLanguage}>
-              {language === "en" ? "IT" : "EN"}
+              {language === "en" ? "EN" : "IT"}
             </Button>
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
