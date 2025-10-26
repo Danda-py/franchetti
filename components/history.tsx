@@ -19,7 +19,7 @@ export function History() {
       },
       {
         period: "2014 - Organic Transition",
-        text: "In 2014, sons Daniele and Massimo permanently joined the company, initiating a process of innovation and diversification, focusing on organic agriculture as an ethical and sustainable choice.",
+        text: "In 2014, Alberto's sons Daniele and Massimo permanently joined the company, initiating a process of innovation and diversification, focusing on organic agriculture as an ethical and sustainable choice.",
       },
       {
         period: "Today",
