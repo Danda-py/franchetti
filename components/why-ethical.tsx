@@ -23,7 +23,7 @@ export function WhyEthical() {
       {
         title: "Respect for Territory",
         description:
-          "Franchetti cultivates in respect of Valtellina, preserving local agricultural traditions and biodiversity on the Rhon alluvial fan.",
+          "Franchetti coltiva rispettando la Valtellina, mantenendo le tradizioni agricole locali e proteggendo la biodiversità sul conoide del torrente Ron.",
       },
       {
         title: "Sustainable Techniques",
