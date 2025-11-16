@@ -42,7 +42,7 @@ const defaultContent: Record<"en" | "it", Content> = {
     ethicalCompany: {
       title: "What is an Ethical Company",
       description:
-        "Franchetti company, located in Valtellina, has been cultivating apples and kiwis for years, enhancing a territory renowned for tourism, landscapes, cuisine, and heroic agriculture on the terraces of the Adda valley.",
+        "An ethical company is a business that acts honestly and responsibly toward people and the environment.It makes choices that are fair and do not cause harm.",
     },
     whyEthical: {
       title: "Why Are They an Ethical Company",
@@ -78,7 +78,7 @@ const defaultContent: Record<"en" | "it", Content> = {
     ethicalCompany: {
       title: "Cos'è un'Azienda Etica",
       description:
-        "L'azienda Franchetti, situata in Valtellina, opera da anni nella coltivazione di mele e kiwi, valorizzando il territorio noto per turismo, paesaggi, cucina e agricoltura eroica sui terrazzamenti della valle dell'Adda.",
+        "Un’azienda etica è un’impresa che agisce in modo onesto e responsabile verso le persone e l’ambiente. Prende decisioni che sono giuste e non causano danni.",
     },
     whyEthical: {
       title: "Perché Sono un'Azienda Etica",
